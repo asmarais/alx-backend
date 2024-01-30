@@ -40,7 +40,7 @@ class Server:
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> dict:
         """a method that returns a dict"""
-        if index == None:
+        if index is None:
             index = 0
         dataset = self.indexed_dataset()
         assert index >= 0 and index < len(dataset)
@@ -57,8 +57,8 @@ class Server:
                 next_index = i
                 break
         return {
-            "index": index,
-            "next_index": next_index,
-            "page_size": len(data),
-            "data": data
+            'index': index,
+            'next_index': next_index,
+            'page_size': len(data),
+            'data': data
         }
