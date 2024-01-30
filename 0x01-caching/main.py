@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-""" 4-main """
-MRUCache = __import__('4-mru_cache').MRUCache
+""" 3-main """
+LRUCache = __import__('3-lru_cache').LRUCache
 
-my_cache = MRUCache()
+my_cache = LRUCache()
 my_cache.put("A", "Hello")
 my_cache.put("B", "World")
 my_cache.put("C", "Holberton")
@@ -28,4 +28,3 @@ my_cache.put("J", "J")
 my_cache.print_cache()
 my_cache.put("K", "K")
 my_cache.print_cache()
-
